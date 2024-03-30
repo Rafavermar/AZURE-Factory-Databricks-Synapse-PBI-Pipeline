@@ -1,0 +1,71 @@
+
+---Count of Individuals by Sex:
+SELECT SexDescription, COUNT(*) as Total
+FROM CensusCombined
+GROUP BY SexDescription;
+
+
+-- Average Age by Birth Country
+SELECT CountryName, AVG(Age) as AverageAge
+FROM CensusCombined
+GROUP BY CountryName;
+
+
+--Number of Individuals per Municipality for a Given Census Year
+SELECT MunicipalityName, COUNT(*) as Total
+FROM CensusCombined
+WHERE censusYear = '2021'
+GROUP BY MunicipalityName;
+
+--Distribution by Age Range
+SELECT
+  AgeGroup,
+  COUNT(*) as Total
+FROM (
+  SELECT
+    CASE
+      WHEN Age BETWEEN 0 AND 17 THEN '0-17'
+      WHEN Age BETWEEN 18 AND 64 THEN '18-64'
+      WHEN Age >= 65 THEN '65+'
+    END as AgeGroup
+  FROM CensusCombined
+) as AgeRanges
+GROUP BY AgeGroup;
+
+
+--List of Unique Provinces and Their Codes
+SELECT DISTINCT Province, ProvinceCode
+FROM CensusCombined;
+
+-- Provinces with the Most Number of Individuals
+SELECT Province, COUNT(*) as Total
+FROM CensusCombined
+GROUP BY Province
+ORDER BY Total DESC;
+
+
+--Number of Individuals Born After a Certain Year:
+SELECT COUNT(*) as Total
+FROM CensusCombined
+WHERE YearOfBirth > 1990;
+
+
+
+--Find All Records for People with 'Male' Sex Description in 2020
+SELECT *
+FROM CensusCombined
+WHERE SexDescription = 'Male' AND censusYear = '2020';
+
+
+--Total Number of Individuals for Each Year of Census
+SELECT censusYear, COUNT(*) as Total
+FROM CensusCombined
+GROUP BY censusYear;
+
+
+--Youngest Individual by District:
+SELECT DistrictNumber, MIN(Age) as YoungestAge
+FROM CensusCombined
+GROUP BY DistrictNumber;
+
+

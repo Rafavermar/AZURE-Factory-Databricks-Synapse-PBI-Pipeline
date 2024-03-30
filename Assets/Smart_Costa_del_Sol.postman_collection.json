@@ -1,0 +1,260 @@
+{
+	"info": {
+		"_postman_id": "4c43ec66-ef8c-43e0-ba1a-7035b91e4ece",
+		"name": "Smart Costa del Sol",
+		"description": "**Columnas:**\n\n- NHOP: Número de HOja Pradronal.\n- EDAD: Edad.\n- SEXO: 1 (hombre), 6 (mujer).\n- CPRON: Código de provincia. Ver tabla catálogo [provincias](http://datosabiertos.malaga.eu/recursos/demografia/padron/tablas-catalogo/provincia.csv).\n- CMUNN: Código de municipio. Ver tabla catálogo [municipios](http://datosabiertos.malaga.eu/recursos/demografia/padron/tablas-catalogo/municipio.csv).\n- NACI: País de nacimiento. Ver tabla catálogo [paises](http://datosabiertos.malaga.eu/recursos/demografia/padron/tablas-catalogo/pais.csv).\n- BARRIO: Código de Barrio.\n    \n\na partir del 2021 incluyen:  \n\n**Columnas:**\n\n- PRDP: Provincia de procedencia.\n- MUDP: Municipio de procedencia.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27686255"
+	},
+	"item": [
+		{
+			"name": "Padron datasets list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://catalogo.smartcostadelsol.es/api/3/action/package_search?q=padron&rows=100",
+					"protocol": "https",
+					"host": [
+						"catalogo",
+						"smartcostadelsol",
+						"es"
+					],
+					"path": [
+						"api",
+						"3",
+						"action",
+						"package_search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "padron"
+						},
+						{
+							"key": "rows",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://datosabiertos.malaga.eu/recursos/demografia/padron/2021/padronbarrios.csv",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://datosabiertos.malaga.eu/recursos/demografia/padron/2021/padronbarrios.csv",
+					"protocol": "https",
+					"host": [
+						"datosabiertos",
+						"malaga",
+						"eu"
+					],
+					"path": [
+						"recursos",
+						"demografia",
+						"padron",
+						"2021",
+						"padronbarrios.csv"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://datosabiertos.malaga.eu/recursos/demografia/padron/2020/padronbarrios.csv",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://datosabiertos.malaga.eu/recursos/demografia/padron/2020/padronbarrios.csv",
+					"protocol": "https",
+					"host": [
+						"datosabiertos",
+						"malaga",
+						"eu"
+					],
+					"path": [
+						"recursos",
+						"demografia",
+						"padron",
+						"2020",
+						"padronbarrios.csv"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://datosabiertos.malaga.eu/recursos/demografia/padron/2019/padronbarrios.csv",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://datosabiertos.malaga.eu/recursos/demografia/padron/2019/padronbarrios.csv",
+					"protocol": "https",
+					"host": [
+						"datosabiertos",
+						"malaga",
+						"eu"
+					],
+					"path": [
+						"recursos",
+						"demografia",
+						"padron",
+						"2019",
+						"padronbarrios.csv"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://datosabiertos.malaga.eu/recursos/demografia/padron/2018/padronbarrios.csv",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://datosabiertos.malaga.eu/recursos/demografia/padron/2018/padronbarrios.csv",
+					"protocol": "https",
+					"host": [
+						"datosabiertos",
+						"malaga",
+						"eu"
+					],
+					"path": [
+						"recursos",
+						"demografia",
+						"padron",
+						"2018",
+						"padronbarrios.csv"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "provincias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://datosabiertos.malaga.eu/recursos/demografia/padron/tablas-catalogo/provincia.csv",
+					"protocol": "http",
+					"host": [
+						"datosabiertos",
+						"malaga",
+						"eu"
+					],
+					"path": [
+						"recursos",
+						"demografia",
+						"padron",
+						"tablas-catalogo",
+						"provincia.csv"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pais",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://datosabiertos.malaga.eu/recursos/demografia/padron/tablas-catalogo/pais.csv",
+					"protocol": "https",
+					"host": [
+						"datosabiertos",
+						"malaga",
+						"eu"
+					],
+					"path": [
+						"recursos",
+						"demografia",
+						"padron",
+						"tablas-catalogo",
+						"pais.csv"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "municipio",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://datosabiertos.malaga.eu/recursos/demografia/padron/tablas-catalogo/municipio.csv",
+					"protocol": "https",
+					"host": [
+						"datosabiertos",
+						"malaga",
+						"eu"
+					],
+					"path": [
+						"recursos",
+						"demografia",
+						"padron",
+						"tablas-catalogo",
+						"municipio.csv"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cartografia Barrios Geojson",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://datosabiertos.malaga.eu/recursos/urbanismoEInfraestructura/planimetria/callejero/da_cartografiaBarrio-4326.geojson",
+					"protocol": "https",
+					"host": [
+						"datosabiertos",
+						"malaga",
+						"eu"
+					],
+					"path": [
+						"recursos",
+						"urbanismoEInfraestructura",
+						"planimetria",
+						"callejero",
+						"da_cartografiaBarrio-4326.geojson"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cartografia Barrios csv",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://datosabiertos.malaga.eu/recursos/urbanismoEInfraestructura/planimetria/callejero/da_cartografiaBarrio-4326.csv",
+					"protocol": "https",
+					"host": [
+						"datosabiertos",
+						"malaga",
+						"eu"
+					],
+					"path": [
+						"recursos",
+						"urbanismoEInfraestructura",
+						"planimetria",
+						"callejero",
+						"da_cartografiaBarrio-4326.csv"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

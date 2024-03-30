@@ -1,0 +1,14 @@
+--GeoData for Malaga districts. Note two options of file type
+https://datosabiertos.malaga.eu/recursos/urbanismoEInfraestructura/planimetria/callejero/da_cartografiaBarrio-4326.csv
+https://datosabiertos.malaga.eu/recursos/urbanismoEInfraestructura/planimetria/callejero/da_cartografiaBarrio-4326.geojson
+
+-- Demographic Data by district and year for Malaga
+https://datosabiertos.malaga.eu/recursos/demografia/padron/2021/padronbarrios.csv
+https://datosabiertos.malaga.eu/recursos/demografia/padron/2020/padronbarrios.csv
+https://datosabiertos.malaga.eu/recursos/demografia/padron/2019/padronbarrios.csv
+https://datosabiertos.malaga.eu/recursos/demografia/padron/2018/padronbarrios.csv
+
+-- Dimension data: Countries, Municipality, Province
+https://datosabiertos.malaga.eu/recursos/demografia/padron/tablas-catalogo/pais.csv
+https://datosabiertos.malaga.eu/recursos/demografia/padron/tablas-catalogo/municipio.csv
+https://datosabiertos.malaga.eu/recursos/demografia/padron/tablas-catalogo/provincia.csv
