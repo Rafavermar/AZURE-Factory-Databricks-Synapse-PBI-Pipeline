@@ -2,8 +2,7 @@
 
 This repository contains the assets and documentation for a comprehensive data pipeline that utilizes Azure services to ingest, transform, and visualize demographic data of Málaga for district-level insights.
 
-![Project_Architecture.png](Assets%2Project_Architecture.png)
-
+![Project_Architecture.png](Assets/Project_Architecture.png)
 
 ## Table of Contents
 
