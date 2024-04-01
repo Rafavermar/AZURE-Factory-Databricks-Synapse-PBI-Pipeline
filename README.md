@@ -42,6 +42,7 @@ Though Azure Key Vault was not used in this temporary setup, it is emphasized th
 ## Data Visualization
 
 The Gold directory houses the transformed data, making it accessible to Power BI for generating insightful visualizations and reports that inform strategic decisions.
+[PowerBI Report](https://app.powerbi.com/view?r=eyJrIjoiNWIxZGFlMDYtMTI1NC00MjcyLWE3ODItODdmYWJiMzRiZTY1IiwidCI6IjY4NTE5ZTQ4LTgzZjMtNDM1Zi1hMzhhLTFhN2FhNzdiYTk4NyIsImMiOjh9&embedImagePlaceholder=true)
 
 ## Conclusion
 
